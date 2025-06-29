@@ -93,7 +93,7 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 @Bean
 public CorsConfigurationSource corsConfigurationSource() {
     CorsConfiguration configuration = new CorsConfiguration();
-    configuration.setAllowedOrigins(List.of("http://localhost:3300", "https://cooking.truc.fr"));
+    configuration.setAllowedOrigins(List.of("http://localhost:3300"));
     configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
     configuration.setAllowedHeaders(List.of("Authorization", "Content-Type", "X-Requested-With"));
     configuration.setExposedHeaders(List.of("Authorization"));

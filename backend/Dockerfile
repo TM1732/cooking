@@ -6,6 +6,6 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:17
 WORKDIR /app
 COPY --from=builder /app/target/*.jar app.jar
-COPY src/main/resources/keystore.p12 /app/keystore.p12
-EXPOSE 8443
+# COPY src/main/resources/keystore.p12 /app/keystore.p12
+EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
