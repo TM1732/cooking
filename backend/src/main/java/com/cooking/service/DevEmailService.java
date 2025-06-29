@@ -48,7 +48,7 @@ public class DevEmailService extends EmailService {
         logger.info("💬 Commenter et noter - Interagissez avec la communauté");
         logger.info("⭐ Sauvegarder vos favoris - Gardez vos recettes préférées");
         logger.info("");
-        logger.info("🚀 Commencer à cuisiner: http://localhost:3000");
+        logger.info("🚀 Commencer à cuisiner: http://localhost:3300");
         logger.info("");
         logger.info("Merci de faire partie de notre communauté culinaire ! 👨‍🍳👩‍🍳");
         
@@ -68,7 +68,7 @@ public class DevEmailService extends EmailService {
         logger.info("📝 SUJET: 🔐 Vérifiez votre adresse email");
         logger.info("");
         logger.info("🔗 LIEN DE VÉRIFICATION:");
-        logger.info("http://localhost:3000/verify-email?token={}", verificationToken);
+        logger.info("http://localhost:3300/verify-email?token={}", verificationToken);
         logger.info("");
         logger.info("✅ Email de vérification 'envoyé' en mode développement");
         logger.info("🔐 ========================================");
@@ -85,7 +85,7 @@ public class DevEmailService extends EmailService {
         logger.info("📝 SUJET: 🔑 Réinitialisation de votre mot de passe");
         logger.info("");
         logger.info("🔗 LIEN DE RESET:");
-        logger.info("http://localhost:3000/reset-password?token={}", resetToken);
+        logger.info("http://localhost:3300/reset-password?token={}", resetToken);
         logger.info("");
         logger.info("✅ Email de reset 'envoyé' en mode développement");
         logger.info("🔑 ========================================");

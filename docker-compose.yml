@@ -8,7 +8,7 @@ services:
   frontend:
     build: ./frontend
     ports:
-      - "3000:80"
+      - "3300:80"
     environment:
       - REACT_APP_API_URL=https://localhost:8443
     restart: unless-stopped

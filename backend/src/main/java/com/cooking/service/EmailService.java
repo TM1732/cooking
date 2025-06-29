@@ -27,7 +27,7 @@ public class EmailService {
     @Value("${app.mail.enabled:true}")
     private boolean emailEnabled;
     
-    @Value("${app.frontend.url:http://localhost:3000}")
+    @Value("${app.frontend.url:http://localhost:3300}")
     private String frontendUrl;
     
     /**
