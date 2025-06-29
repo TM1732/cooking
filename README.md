@@ -5,14 +5,14 @@ Application web complète de partage de recettes avec Spring Boot et React.
 ## 🚀 Démarrage ultra-rapide
 
 ```bash
-./start-dev.sh
+docker compose up
 ```
 
 ## 📍 Accès à l'application
 
 - **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:8080/api  
-- **Base de données H2**: http://localhost:8080/h2-console
+- **Backend API**: https://localhost:8443/api  
+- **Base de données H2**: https://localhost:8443/h2-console
 
 ## 👥 Comptes de démonstration
 
@@ -22,19 +22,11 @@ Application web complète de partage de recettes avec Spring Boot et React.
 | Chef  | chef     | chef     | CRUD recettes |
 | User  | user     | user     | Lecture + commentaires |
 
-## 🛠️ Commandes utiles
-
-```bash
-./start-dev.sh      # Démarrer l'application
-./stop-dev.sh       # Arrêter l'application  
-./test-all.sh       # Lancer tous les tests
-```
-
 ## 🏗️ Technologies
 
-- **Backend**: Spring Boot 3.2, Spring Security, JPA, JWT
-- **Frontend**: React 18, TailwindCSS, Axios
-- **Base de données**: H2 (dev), PostgreSQL (prod)
+- **Backend**: Spring Boot, Spring Security, JPA, JWT
+- **Frontend**: React, TailwindCSS, Axios
+- **Base de données**: H2 (dev), PostgreSQL (prod) (non implémenté)
 - **Authentification**: JWT avec rôles
 
 ## 📁 Structure
@@ -52,13 +44,10 @@ cooking-website/
 ✅ Authentification sécurisée (JWT)  
 ✅ Gestion des rôles (Admin/Chef/User)  
 ✅ CRUD complet des recettes  
-✅ Recherche par mots-clés  
-✅ Système de commentaires  
-✅ Email de bienvenue  
+✅ Recherche par mots-clés (non implémenté)  
+✅ Système de commentaires 
+✅ Email de bienvenue (en dev, dans les logs)  
 ✅ Interface responsive  
 ✅ API REST sécurisée  
 
-**Développé avec les meilleures pratiques de sécurité moderne !** 🔒
-=======
-# cooking
-Challenge
+# Cooking-Website Challenge
