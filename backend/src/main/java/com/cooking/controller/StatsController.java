@@ -12,7 +12,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/stats")
-@CrossOrigin(origins = { "http://localhost:3300", "https://cooking.lunigram.fr" })
 public class StatsController {
 
     private final UserRepository userRepository;
