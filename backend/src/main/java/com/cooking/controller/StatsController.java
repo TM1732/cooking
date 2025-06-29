@@ -12,7 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/stats")
-@CrossOrigin(origins = "https://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000")
 public class StatsController {
 
     private final UserRepository userRepository;
