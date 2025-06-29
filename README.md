@@ -45,7 +45,7 @@ cooking-website/
 ✅ Gestion des rôles (Admin/Chef/User)  
 ✅ CRUD complet des recettes  
 ✅ Recherche par mots-clés (non implémenté)  
-✅ Système de commentaires 
+✅ Système de commentaires  
 ✅ Email de bienvenue (en dev, dans les logs)  
 ✅ Interface responsive  
 ✅ API REST sécurisée  
