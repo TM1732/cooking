@@ -34,7 +34,6 @@ docker compose up --build
 cooking-website/
 ├── backend/          # API Spring Boot
 ├── frontend/         # SPA React
-├── start-dev.sh      # Démarrage rapide
 └── README.md         # Documentation
 ```
 
