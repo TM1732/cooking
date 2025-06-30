@@ -36,9 +36,8 @@ public class SecurityConfig {
     private JwtAuthenticationFilter jwtAuthenticationFilter;
 
     @Autowired
-    private PasswordEncoder passwordEncoder; // Injecter au lieu de créer
+    private PasswordEncoder passwordEncoder;
 
-    // ===== NOUVEAU : MessageSource pour les messages en français =====
     @Bean
     public ReloadableResourceBundleMessageSource messageSource() {
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
@@ -48,13 +47,12 @@ public class SecurityConfig {
         return messageSource;
     }
 
-    // ===== MODIFIÉ : Ajout du messageSource =====
     @Bean
     public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
         authProvider.setUserDetailsService(userService);
-        authProvider.setPasswordEncoder(passwordEncoder); // Utiliser celui injecté
-        authProvider.setMessageSource(messageSource()); // ⭐ NOUVEAU : Messages en français
+        authProvider.setPasswordEncoder(passwordEncoder); 
+        authProvider.setMessageSource(messageSource());
         return authProvider;
     }
 
@@ -126,7 +124,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:3300", "https://cooking.lunigram.fr"));
+        configuration.setAllowedOrigins(List.of("http://localhost:3300"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("Authorization", "Content-Type", "X-Requested-With", "*"));
         configuration.setExposedHeaders(List.of("Authorization"));
