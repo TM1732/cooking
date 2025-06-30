@@ -11,8 +11,7 @@ docker compose up
 ## 📍 Accès à l'application
 
 - **Frontend**: http://localhost:3300
-- **Backend API**: https://localhost:8443/api  
-- **Base de données H2**: https://localhost:8443/h2-console
+- **Backend API**: http://localhost:8181/api  
 
 ## 👥 Comptes de démonstration
 
