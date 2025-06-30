@@ -5,7 +5,7 @@ Application web complète de partage de recettes avec Spring Boot et React.
 ## 🚀 Démarrage ultra-rapide
 
 ```bash
-docker compose up
+docker compose up --build
 ```
 
 ## 📍 Accès à l'application
