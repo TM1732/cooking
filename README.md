@@ -5,14 +5,13 @@ Application web complète de partage de recettes avec Spring Boot et React.
 ## 🚀 Démarrage ultra-rapide
 
 ```bash
-docker compose up
+docker compose up --build
 ```
 
 ## 📍 Accès à l'application
 
 - **Frontend**: http://localhost:3300
-- **Backend API**: https://localhost:8443/api  
-- **Base de données H2**: https://localhost:8443/h2-console
+- **Backend API**: http://localhost:8181/api  
 
 ## 👥 Comptes de démonstration
 
@@ -35,7 +34,6 @@ docker compose up
 cooking-website/
 ├── backend/          # API Spring Boot
 ├── frontend/         # SPA React
-├── start-dev.sh      # Démarrage rapide
 └── README.md         # Documentation
 ```
 
